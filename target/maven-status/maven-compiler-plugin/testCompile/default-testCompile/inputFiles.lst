@@ -1,4 +1,5 @@
-D:\Automation\Bhanu Training\Selenium\workspace2\POS\src\test\java\generic\BaseTest.java
-D:\Automation\Bhanu Training\Selenium\workspace2\POS\src\test\java\generic\Utility.java
-D:\Automation\Bhanu Training\Selenium\workspace2\POS\src\test\java\script\Demo1.java
-D:\Automation\Bhanu Training\Selenium\workspace2\POS\src\test\java\script\Demo2.java
+C:\Users\Admin\git\pos\src\test\java\generic\BaseTest.java
+C:\Users\Admin\git\pos\src\test\java\generic\Utility.java
+C:\Users\Admin\git\pos\src\test\java\page\HomePage.java
+C:\Users\Admin\git\pos\src\test\java\page\LoginPage.java
+C:\Users\Admin\git\pos\src\test\java\script\ValidLogin.java
