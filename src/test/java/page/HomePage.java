@@ -14,24 +14,43 @@ public class HomePage
 	@FindBy(xpath="//h3[starts-with(text(),'Welcome to OSPOS')]")
 	private WebElement welcomeMessage;
 	
+	@FindBy(xpath="//a[text()='Logout']")
+	private WebElement logoutBtn;
+	
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
 	}
 	
+//	public boolean verifyHomePageIsDisplayed(WebDriverWait wait)
+//	{
+//		try 
+//		{
+//			wait.until(ExpectedConditions.visibilityOf(welcomeMessage));
+//			Reporter.log("Home Page is Displayed",true);
+//			return true;
+//		}
+//		catch (Exception e) 
+//		{
+//			Reporter.log("Home Page is NOT Displayed",true);
+//			return false;
+//		}	
+//	}
+	
 	public boolean verifyHomePageIsDisplayed(WebDriverWait wait)
 	{
 		try 
 		{
-				wait.until(ExpectedConditions.visibilityOf(welcomeMessage));
-				Reporter.log("Home Page is Displayed",true);
-				return true;
+			wait.until(ExpectedConditions.visibilityOf(logoutBtn));
+			Reporter.log("Home Page is Displayed",true);
+			return true;
 		}
 		catch (Exception e) 
 		{
-				Reporter.log("Home Page is NOT Displayed",true);
-				return false;
-		}
-		
+			Reporter.log("Home Page is NOT Displayed",true);
+			return false;
+		}	
 	}
+	
+	
 }
